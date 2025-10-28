@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madhurkjindal022.github.io/CM_Zindal/sitemap.xml
