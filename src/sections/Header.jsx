@@ -38,7 +38,7 @@ const Header = () => {
       <div className="container flex h-14 items-center max-lg:px-5 relative z-20">
         {/* Mobile Logo */}
         <a className="lg:hidden flex-1 cursor-pointer z-20">
-          <img src="/images/xora.svg" width={115} height={55} alt="logo" />
+          <img src="./images/xora.svg" width={115} height={55} alt="logo" />
         </a>
 
         {/* Navigation Menu */}
@@ -67,7 +67,7 @@ const Header = () => {
                     className="max-lg:hidden transition-transform duration-500 cursor-pointer"
                   >
                     <img
-                      src="/images/xora.svg"
+                      src="./images/xora.svg"
                       width={160}
                       height={55}
                       alt="logo"
@@ -87,14 +87,14 @@ const Header = () => {
             {/* Mobile Background Neon */}
             <div className="lg:hidden absolute top-1/2 left-0 w-[960px] h-[380px] translate-x-[-290px] -translate-y-1/2 rotate-90 pointer-events-none">
               <img
-                src="/images/bg-outlines.svg"
+                src="./images/bg-outlines.svg"
                 width={960}
                 height={380}
                 alt="outline"
                 className="relative z-10"
               />
               <img
-                src="/images/bg-outlines-fill.png"
+                src="./images/bg-outlines-fill.png"
                 width={960}
                 height={380}
                 alt="outline"
@@ -110,7 +110,7 @@ const Header = () => {
           onClick={() => setIsOpen((prev) => !prev)}
         >
           <img
-            src={`/images/${isOpen ? "close" : "magic"}.svg`}
+            src={`./images/${isOpen ? "close" : "magic"}.svg`}
             alt="toggle"
             className="size-1/2 object-contain"
           />

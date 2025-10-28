@@ -12,7 +12,7 @@ const AppHub = () => {
   return (
     <section className="relative bg-gradient-to-b from-[#010014] via-[#0b0030] to-[#000000] min-h-screen text-white overflow-hidden">
       {/* Background stars & nebula */}
-      <div className="absolute inset-0 bg-[url('/images/starfield.png')] bg-cover opacity-20 animate-pulse pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[url('./images/starfield.png')] bg-cover opacity-20 animate-pulse pointer-events-none"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.05)_0%,_transparent_80%)]"></div>
 
       <Element name="app-hub" className="relative z-10 container mx-auto py-20">

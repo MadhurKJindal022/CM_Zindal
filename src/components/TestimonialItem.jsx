@@ -1,11 +1,12 @@
 import clsx from "clsx";
+import PropTypes from "prop-types";
 
 const TestimonialItem = ({ item, containerClassName }) => {
   return (
     <div
       className={clsx(
         "relative px-14 pb-14 pt-11 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 max-md:pt-11 after:max-md:-right-4",
-        containerClassName,
+        containerClassName
       )}
     >
       <blockquote className="h6 mb-8 text-p4">{item.comment}</blockquote>
@@ -26,4 +27,16 @@ const TestimonialItem = ({ item, containerClassName }) => {
     </div>
   );
 };
+
+// ✅ Add PropTypes validation
+TestimonialItem.propTypes = {
+  item: PropTypes.shape({
+    comment: PropTypes.string.isRequired,
+    avatarUrl: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    role: PropTypes.string.isRequired,
+  }).isRequired,
+  containerClassName: PropTypes.string,
+};
+
 export default TestimonialItem;

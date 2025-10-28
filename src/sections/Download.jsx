@@ -20,7 +20,7 @@ const Download = () => {
           <div className="flex-1 relative">
             {/* Logo */}
             <div className="mb-8">
-              <img src="/images/xora.svg" width={160} height={55} alt="xora" className="drop-shadow-neon-cyan"/>
+              <img src="./images/xora.svg" width={160} height={55} alt="xora" className="drop-shadow-neon-cyan"/>
             </div>
 
             {/* Description */}
@@ -39,7 +39,7 @@ const Download = () => {
                     <span className="absolute -top-2 rotate-90">
                       <Marker />
                     </span>
-                    <img src="/images/lines.svg" alt="lines" className="absolute w-6 h-6 object-contain"/>
+                    <img src="./images/lines.svg" alt="lines" className="absolute w-6 h-6 object-contain"/>
                     <span className="text-white text-xl z-10">{icon}</span>
                   </a>
                 </li>
@@ -57,7 +57,7 @@ const Download = () => {
                 <span className="absolute top-4 left-18 w-3 h-3 bg-pink-400/50 rounded-full shadow-[0_0_10px_#ff00ff70] animate-pulse delay-400"></span>
 
                 <img
-                  src="/images/screen.jpg"
+                  src="./images/screen.jpg"
                   width={855}
                   height={655}
                   alt="screen"

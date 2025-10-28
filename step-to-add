@@ -1,0 +1,38 @@
+echo "# CM_Zindal" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/MadhurKJindal022/CM_Zindal.git
+git push -u origin main
+
+git remote add origin https://github.com/MadhurKJindal022/CM_Zindal.git
+git branch -M main
+git push -u origin main
+
+===
+
+npm install gh-pages --save-dev --legacy-peer-deps
+
+
+package.json
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
+
+npm run build
+npm run deploy
+
+
+and in vite.config.js:
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/mkj-landpage/',
+});

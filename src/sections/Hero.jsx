@@ -27,7 +27,7 @@ const Hero = () => {
             </p>
 
             <LinkScroll to="apps" offset={-100} spy smooth>
-              <Button icon="/images/zap.svg" className="bg-cyan-400/20 border border-cyan-400 hover:shadow-[0_0_20px_#00ffff80] text-white">
+              <Button icon="./images/zap.svg" className="bg-cyan-400/20 border border-cyan-400 hover:shadow-[0_0_20px_#00ffff80] text-white">
                 Explore My Apps
               </Button>
             </LinkScroll>
@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 rounded-xl bg-purple-400/10 blur-3xl filter animate-pulse-slow"></div>
               <img
-                src="/images/hero.png"
+                src="./images/hero.png"
                 className="size-1230 max-lg:h-auto relative z-10"
                 alt="App Hub Hero"
               />
